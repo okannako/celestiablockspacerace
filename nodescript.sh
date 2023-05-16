@@ -129,10 +129,13 @@ break
 
 "Create Validator")
 
+Evm:EvmAdress
+
 celestia-appd tx staking create-validator \
 --amount=1000000utia \
 --pubkey=$(celestia-appd tendermint show-validator) \
 --moniker=$NodeName \
+--evm-address="EvmAdress" /
 --chain-id=blockspacerace-0 \
 --commission-rate=0.05 \
 --commission-max-rate=0.20 \

@@ -129,7 +129,9 @@ break
 
 "Create Validator")
 
-Evm:EvmAdress
+echo "EvmAdress:"
+read EvmAdress
+echo export EvmAdress=${EvmAdress} >> $HOME/.bash_profile
 
 celestia-appd tx staking create-validator \
 --amount=1000000utia \
